@@ -21,5 +21,5 @@ def run_program():
     return jsonify({'output': output.decode()})
 
 if __name__ == '__main__':
-    port = int(os.getenv('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    port = int(os.getenv('PORT', 8080))  # Use port 8080 as default
+    app.run(host='0.0.0.0', port=port)    # Bind to all available network interfaces
