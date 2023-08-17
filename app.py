@@ -16,7 +16,7 @@ def run_program():
     query = data['query']
 
     # Execute your Python program
-    output = subprocess.check_output([sys.executable, 'chat.py', query])
+    output = subprocess.check_output([sys.executable, 'Chat.py', query])
 
     return jsonify({'output': output.decode()})
 
