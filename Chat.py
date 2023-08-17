@@ -20,5 +20,4 @@ loader = DirectoryLoader("data/")
 
 index = VectorstoreIndexCreator().from_loaders([loader])
 
-
 print(index.query(query, llm=ChatOpenAI()))
